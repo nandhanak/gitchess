@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="chess.css">
+</head>
+<body>
+    <div class="chessboard" id="chessboard">
+
+    </div>
+   
+    <script>
+ let chessboard= document.getElementById('chessboard')
+ for(let i=1;i<=8;i++){
+    for(let j=1;j<=8;j++){
+        let chessSuqare=document.createElement('div');
+        chessSuqare.className='chessquare';
+        if((i+j) %2 == 0){
+           chessSuqare  .style.backgroundColor = "black";
+
+        }
+        
+       chessboard. appendChild(chessSuqare);
+      
+        
+    }
+ }
+
+
+
+    </script>
+</body>
+</html>
